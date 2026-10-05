@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO₂-Footprint</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body class="bg-light">
+    <header class="site-header">
+        <h1 class="visually-hidden">CO₂-Footprint</h1>
+        <div class="logo-bereich">
+            <img src="img/image.png"
+                 alt="CO₂-Footprint – Logo der Webanwendung"
+                 class="site-logo">
+        </div>
+        <nav aria-label="Globale Navigation" class="globale-navigation">
+            <ul class="nav">
+                <li><a href="#start" class="nav-link">Start</a></li>
+                <li><a href="#co2-daten" class="nav-link">CO₂-Daten</a></li>
+                <li><a href="#ueber-das-projekt" class="nav-link">Über das Projekt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        <nav id="lokale-navigation" aria-label="Lokale Navigation" class="seitenleiste">
+            <h2>Auf dieser Seite</h2>
+            <label for="schriftrichtung">Schriftrichtung:</label>
+            <select id="schriftrichtung">
+                <option value="ltr" selected>Links nach rechts</option>
+                <option value="rtl">Rechts nach links</option>
+            </select>
+            <ul>
+                <li><a href="#start">Start</a></li>
+                <li><a href="#co2-daten">CO₂-Daten</a></li>
+                <li><a href="#ueber-das-projekt">Über das Projekt</a></li>
+            </ul>
+        </nav>
+
+        <div id="inhalt">
+            <section id="start">
+                <h2>Start</h2>
+                <p>Diese Webanwendung soll CO₂-Emissionsdaten von Ländern und Unternehmen transparent und übersichtlich darstellen.</p>
+                <p>Die auf dieser Webseite verwendeten CO₂-Daten sind fiktiv und dienen ausschließlich der Demonstration der Webanwendung.</p>
+            </section>
+            <section id="co2-daten">
+                <h2>CO₂-Daten</h2>
+                <p>Alle dargestellten Emissionswerte sind fiktiv und dienen ausschließlich zu Demonstrationszwecken.</p>
+                <div id="filterbereich" class="filterbereich">
+                    <label for="filter-unternehmen">Unternehmen filtern:</label>
+                    <input type="text" id="filter-unternehmen" name="filter-unternehmen" class="form-control">
+                    <label for="filter-land">Land filtern:</label>
+                    <input type="text" id="filter-land" name="filter-land" class="form-control">
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col"><button type="button" id="sort-unternehmen" class="btn btn-sm btn-outline-secondary">Unternehmen</button></th>
+                                <th scope="col"><button type="button" id="sort-land" class="btn btn-sm btn-outline-secondary">Land</button></th>
+                                <th scope="col">CO₂-Emissionen (t/Jahr)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Alpha Energie</td>
+                                <td>Deutschland</td>
+                                <td>12500</td>
+                            </tr>
+                            <tr>
+                                <td>Nova Stahl</td>
+                                <td>Frankreich</td>
+                                <td>28700</td>
+                            </tr>
+                            <tr>
+                                <td>GreenTech Solutions</td>
+                                <td>Spanien</td>
+                                <td>3400</td>
+                            </tr>
+                            <tr>
+                                <td>Nordwerk</td>
+                                <td>Schweden</td>
+                                <td>9600</td>
+                            </tr>
+                            <tr>
+                                <td>Terra Logistik</td>
+                                <td>Italien</td>
+                                <td>7800</td>
+                            </tr>
+                            <tr>
+                                <td>Solaris Industrie</td>
+                                <td>Spanien</td>
+                                <td>15300</td>
+                            </tr>
+                            <tr>
+                                <td>Rhein Produktion</td>
+                                <td>Deutschland</td>
+                                <td>18400</td>
+                            </tr>
+                            <tr>
+                                <td>Baltic Transport</td>
+                                <td>Schweden</td>
+                                <td>6200</td>
+                            </tr>
+                            <tr>
+                                <td>Eco Systems</td>
+                                <td>Frankreich</td>
+                                <td>4100</td>
+                            </tr>
+                            <tr>
+                                <td>Global Manufacturing</td>
+                                <td>Italien</td>
+                                <td>22100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="ueber-das-projekt">
+                <h2>Über das Projekt</h2>
+                <p>Die Webanwendung wurde im Rahmen eines Studienprojekts entwickelt. Sie demonstriert die übersichtliche Darstellung und Vergleichbarkeit fiktiver CO₂-Emissionsdaten.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inhalt">
+            <nav aria-label="Rechtliche Hinweise">
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO₂-Footprint</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="container py-3">
+        <img src="img/logo.png" alt="CO₂-Footprint-Logo" class="img-fluid" style="max-width: 150px;">
+        <h1>CO₂-Footprint</h1>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#start">Start</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#co2-daten">CO₂-Daten</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ueber-das-projekt">Über das Projekt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <div class="row">
+
+            <nav class="col-lg-3 col-sm-12">
+                <h2>Auf dieser Seite</h2>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#start">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#co2-daten">CO₂-Daten</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ueber-das-projekt">Über das Projekt</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="col-lg-9 col-sm-12">
+
+                <div>
+
+                    <section id="start">
+                        <h2>Willkommen beim CO₂-Footprint</h2>
+                        <p>
+                            Diese Webseite informiert über die jährlichen CO₂-Emissionen
+                            verschiedener Unternehmen und Länder.
+                        </p>
+                        <p>
+                            Alle dargestellten Emissionsdaten sind fiktiv und dienen
+                            ausschließlich der Veranschaulichung.
+                        </p>
+                    </section>
+
+                    <section id="co2-daten">
+                        <h2>CO₂-Emissionsdaten</h2>
+                        <p>
+                            Die folgende Tabelle zeigt fiktive jährliche CO₂-Emissionen
+                            verschiedener Unternehmen in Tonnen.
+                        </p>
+                        <div class="row mb-3">
+
+                            <div class="col-md-6">
+
+                                <label for="filter-unternehmen">Unternehmen:</label>
+
+                                <input type="text" id="filter-unternehmen" class="form-control"
+                                    placeholder="Unternehmen suchen">
+
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <label for="filter-land">Land:</label>
+
+                                <input type="text" id="filter-land" class="form-control" placeholder="Land suchen">
+
+                            </div>
+
+                        </div>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="sortierkopf">
+                                        <button type="button" class="sortierbutton">
+                                            Unternehmen <span aria-hidden="true">↕</span>
+                                        </button>
+                                    </th>
+                                    <th scope="col" class="sortierkopf">
+                                        <button type="button" class="sortierbutton">
+                                            Land <span aria-hidden="true">↕</span>
+                                        </button>
+                                    </th>
+                                    <th scope="col" class="sortierkopf">
+                                        <button type="button" class="sortierbutton">
+                                            CO₂-Emissionen (t/Jahr) <span aria-hidden="true">↕</span>
+                                        </button>
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Alpha Energie</td>
+                                    <td>Deutschland</td>
+                                    <td>12500</td>
+                                </tr>
+                                <tr>
+                                    <td>Nova Stahl</td>
+                                    <td>Frankreich</td>
+                                    <td>28700</td>
+                                </tr>
+                                <tr>
+                                    <td>GreenTech Solutions</td>
+                                    <td>Spanien</td>
+                                    <td>3400</td>
+                                </tr>
+                                <tr>
+                                    <td>Nordwerk</td>
+                                    <td>Schweden</td>
+                                    <td>9600</td>
+                                </tr>
+                                <tr>
+                                    <td>Terra Logistik</td>
+                                    <td>Italien</td>
+                                    <td>7800</td>
+                                </tr>
+                                <tr>
+                                    <td>Solaris Industrie</td>
+                                    <td>Spanien</td>
+                                    <td>15300</td>
+                                </tr>
+                                <tr>
+                                    <td>Rhein Produktion</td>
+                                    <td>Deutschland</td>
+                                    <td>18400</td>
+                                </tr>
+                                <tr>
+                                    <td>Baltic Transport</td>
+                                    <td>Schweden</td>
+                                    <td>6200</td>
+                                </tr>
+                                <tr>
+                                    <td>Eco Systems</td>
+                                    <td>Frankreich</td>
+                                    <td>4100</td>
+                                </tr>
+                                <tr>
+                                    <td>Global Manufacturing</td>
+                                    <td>Italien</td>
+                                    <td>22100</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section id="ueber-das-projekt">
+                        <h2>Über das Projekt</h2>
+                        <p>
+                            Diese Webseite wurde im Rahmen einer Fallstudie
+                            im Studiengang Wirtschaftsinformatik entwickelt.
+                        </p>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="container py-3 my-4 border-top">
+        <p>CO₂-Footprint – Studienprojekt</p>
+
+        <nav>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#impressum">Impressum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#datenschutz">Datenschutz</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
